@@ -4,17 +4,6 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Mint_Labs | Developer & Gamer</title>
   <style>
-    :root {
-      --bg-main: #0b0f12;
-      --bg-card: #131a20;
-      --bg-card-hover: #18222a;
-      --border: #22303c;
-      --mint: #3ee0a8;
-      --mint-dim: rgba(62, 224, 168, 0.12);
-      --text-main: #f0f6fc;
-      --text-muted: #8b949e;
-    }
-
     * {
       box-sizing: border-box;
       margin: 0;
@@ -23,8 +12,8 @@
 
     body {
       font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
-      background-color: var(--bg-main);
-      color: var(--text-main);
+      background-color: #0b0f12;
+      color: #f0f6fc;
       line-height: 1.6;
       padding: 2rem 1.25rem;
     }
@@ -34,16 +23,15 @@
       margin: 0 auto;
     }
 
-    /* Header & Hero */
     header {
       padding: 2.5rem 0 2rem;
-      border-bottom: 1px solid var(--border);
+      border-bottom: 1px solid #22303c;
     }
 
     .badge {
       display: inline-block;
-      background: var(--mint-dim);
-      color: var(--mint);
+      background-color: rgba(62, 224, 168, 0.12);
+      color: #3ee0a8;
       border: 1px solid rgba(62, 224, 168, 0.3);
       padding: 0.25rem 0.75rem;
       border-radius: 999px;
@@ -56,15 +44,16 @@
       font-size: 2.5rem;
       letter-spacing: -0.02em;
       margin-bottom: 0.5rem;
+      color: #f0f6fc;
     }
 
     h1 span {
-      color: var(--mint);
+      color: #3ee0a8;
     }
 
     .bio {
       font-size: 1.15rem;
-      color: var(--text-muted);
+      color: #8b949e;
       max-width: 580px;
       margin-bottom: 1.25rem;
     }
@@ -74,7 +63,7 @@
       flex-wrap: wrap;
       gap: 1.25rem;
       font-size: 0.9rem;
-      color: var(--text-muted);
+      color: #8b949e;
       margin-bottom: 1.75rem;
     }
 
@@ -97,31 +86,30 @@
     }
 
     .btn-primary {
-      background: var(--mint);
+      background-color: #3ee0a8;
       color: #06140f;
     }
 
     .btn-primary:hover {
-      background: #5ef2be;
+      background-color: #5ef2be;
       transform: translateY(-2px);
     }
 
     .btn-secondary {
-      background: var(--bg-card);
-      color: var(--text-main);
-      border: 1px solid var(--border);
+      background-color: #131a20;
+      color: #f0f6fc;
+      border: 1px solid #22303c;
     }
 
     .btn-secondary:hover {
-      border-color: var(--mint);
-      color: var(--mint);
+      border-color: #3ee0a8;
+      color: #3ee0a8;
       transform: translateY(-2px);
     }
 
-    /* Sections */
     section {
       padding: 2.5rem 0;
-      border-bottom: 1px solid var(--border);
+      border-bottom: 1px solid #22303c;
     }
 
     h2 {
@@ -130,6 +118,7 @@
       display: flex;
       align-items: center;
       gap: 0.5rem;
+      color: #f0f6fc;
     }
 
     h2::before {
@@ -137,11 +126,10 @@
       display: inline-block;
       width: 4px;
       height: 1.2em;
-      background: var(--mint);
+      background-color: #3ee0a8;
       border-radius: 2px;
     }
 
-    /* Skills / Interests */
     .tags {
       display: flex;
       flex-wrap: wrap;
@@ -149,15 +137,14 @@
     }
 
     .tag {
-      background: var(--bg-card);
-      border: 1px solid var(--border);
+      background-color: #131a20;
+      border: 1px solid #22303c;
       padding: 0.4rem 0.85rem;
       border-radius: 6px;
       font-size: 0.9rem;
-      color: var(--text-main);
+      color: #f0f6fc;
     }
 
-    /* Project Grid */
     .grid {
       display: grid;
       grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
@@ -165,8 +152,8 @@
     }
 
     .card {
-      background: var(--bg-card);
-      border: 1px solid var(--border);
+      background-color: #131a20;
+      border: 1px solid #22303c;
       border-radius: 10px;
       padding: 1.35rem;
       text-decoration: none;
@@ -178,8 +165,8 @@
     }
 
     .card:hover {
-      background: var(--bg-card-hover);
-      border-color: var(--mint);
+      background-color: #18222a;
+      border-color: #3ee0a8;
       transform: translateY(-3px);
     }
 
@@ -193,35 +180,34 @@
     .card-title {
       font-size: 1.15rem;
       font-weight: 700;
-      color: var(--mint);
+      color: #3ee0a8;
     }
 
     .lang-pill {
       font-size: 0.75rem;
       padding: 0.2rem 0.55rem;
       border-radius: 999px;
-      background: var(--mint-dim);
-      color: var(--mint);
+      background-color: rgba(62, 224, 168, 0.12);
+      color: #3ee0a8;
       font-weight: 600;
     }
 
     .card p {
-      color: var(--text-muted);
+      color: #8b949e;
       font-size: 0.95rem;
       margin-bottom: 1rem;
     }
 
     .card-footer {
       font-size: 0.85rem;
-      color: var(--text-main);
+      color: #f0f6fc;
       font-weight: 500;
     }
 
-    /* Footer */
     footer {
       padding-top: 2rem;
       text-align: center;
-      color: var(--text-muted);
+      color: #8b949e;
       font-size: 0.85rem;
     }
   </style>
