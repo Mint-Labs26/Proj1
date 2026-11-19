@@ -1,3 +1,301 @@
 
 
 <!DOCTYPE html><html lang="en"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Mint_Labs</title><style>body{font-family:sans-serif;background:#0d1117;color:#c9d1d9;max-width:600px;margin:2rem auto;padding:1rem}a{color:#58a6ff}.card{border:1px solid #30363d;padding:1rem;border-radius:6px;margin:1rem 0}</style></head><body><h1>Mint_Labs</h1><p>A Muslim gamer making projects (no im not camman18).</p><div class="card"><h2>Projects</h2><p><a href="https://github.com/Mint-Labs26/Proj1">Proj1</a> - HTML project</p></div><a href="https://github.com/Mint-Labs26">GitHub</a> · <a href="https://bloxdhub.com/@Mint_Icecream">BloxdHub</a></body></html>
+
+
+
+<!DOCTYPE html><html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Mint_Labs | Developer & Gamer</title>
+  <style>
+    :root {
+      --bg-main: #0b0f12;
+      --bg-card: #131a20;
+      --bg-card-hover: #18222a;
+      --border: #22303c;
+      --mint: #3ee0a8;
+      --mint-dim: rgba(62, 224, 168, 0.12);
+      --text-main: #f0f6fc;
+      --text-muted: #8b949e;
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+      background-color: var(--bg-main);
+      color: var(--text-main);
+      line-height: 1.6;
+      padding: 2rem 1.25rem;
+    }
+
+    .container {
+      max-width: 760px;
+      margin: 0 auto;
+    }
+
+    /* Header & Hero */
+    header {
+      padding: 2.5rem 0 2rem;
+      border-bottom: 1px solid var(--border);
+    }
+
+    .badge {
+      display: inline-block;
+      background: var(--mint-dim);
+      color: var(--mint);
+      border: 1px solid rgba(62, 224, 168, 0.3);
+      padding: 0.25rem 0.75rem;
+      border-radius: 999px;
+      font-size: 0.85rem;
+      font-weight: 600;
+      margin-bottom: 1rem;
+    }
+
+    h1 {
+      font-size: 2.5rem;
+      letter-spacing: -0.02em;
+      margin-bottom: 0.5rem;
+    }
+
+    h1 span {
+      color: var(--mint);
+    }
+
+    .bio {
+      font-size: 1.15rem;
+      color: var(--text-muted);
+      max-width: 580px;
+      margin-bottom: 1.25rem;
+    }
+
+    .meta {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 1.25rem;
+      font-size: 0.9rem;
+      color: var(--text-muted);
+      margin-bottom: 1.75rem;
+    }
+
+    .actions {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.75rem;
+    }
+
+    .btn {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.5rem;
+      padding: 0.65rem 1.25rem;
+      border-radius: 8px;
+      font-weight: 600;
+      font-size: 0.95rem;
+      text-decoration: none;
+      transition: all 0.2s ease;
+    }
+
+    .btn-primary {
+      background: var(--mint);
+      color: #06140f;
+    }
+
+    .btn-primary:hover {
+      background: #5ef2be;
+      transform: translateY(-2px);
+    }
+
+    .btn-secondary {
+      background: var(--bg-card);
+      color: var(--text-main);
+      border: 1px solid var(--border);
+    }
+
+    .btn-secondary:hover {
+      border-color: var(--mint);
+      color: var(--mint);
+      transform: translateY(-2px);
+    }
+
+    /* Sections */
+    section {
+      padding: 2.5rem 0;
+      border-bottom: 1px solid var(--border);
+    }
+
+    h2 {
+      font-size: 1.35rem;
+      margin-bottom: 1.25rem;
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+    }
+
+    h2::before {
+      content: "";
+      display: inline-block;
+      width: 4px;
+      height: 1.2em;
+      background: var(--mint);
+      border-radius: 2px;
+    }
+
+    /* Skills / Interests */
+    .tags {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.6rem;
+    }
+
+    .tag {
+      background: var(--bg-card);
+      border: 1px solid var(--border);
+      padding: 0.4rem 0.85rem;
+      border-radius: 6px;
+      font-size: 0.9rem;
+      color: var(--text-main);
+    }
+
+    /* Project Grid */
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 1rem;
+    }
+
+    .card {
+      background: var(--bg-card);
+      border: 1px solid var(--border);
+      border-radius: 10px;
+      padding: 1.35rem;
+      text-decoration: none;
+      color: inherit;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      transition: all 0.2s ease;
+    }
+
+    .card:hover {
+      background: var(--bg-card-hover);
+      border-color: var(--mint);
+      transform: translateY(-3px);
+    }
+
+    .card-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 0.65rem;
+    }
+
+    .card-title {
+      font-size: 1.15rem;
+      font-weight: 700;
+      color: var(--mint);
+    }
+
+    .lang-pill {
+      font-size: 0.75rem;
+      padding: 0.2rem 0.55rem;
+      border-radius: 999px;
+      background: var(--mint-dim);
+      color: var(--mint);
+      font-weight: 600;
+    }
+
+    .card p {
+      color: var(--text-muted);
+      font-size: 0.95rem;
+      margin-bottom: 1rem;
+    }
+
+    .card-footer {
+      font-size: 0.85rem;
+      color: var(--text-main);
+      font-weight: 500;
+    }
+
+    /* Footer */
+    footer {
+      padding-top: 2rem;
+      text-align: center;
+      color: var(--text-muted);
+      font-size: 0.85rem;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <header>
+      <div class="badge">Available for collab & gaming</div>
+      <h1>Hi, I'm <span>Mint_Labs</span></h1>
+      <p class="bio">
+        A Muslim gamer making web projects and experimenting with code. (And no, I'm not camman18.)
+      </p>
+      <div class="meta">
+        <span>📍 Near Dallas, TX</span>
+        <span>💻 @Mint-Labs26</span>
+        <span>🎮 @Mint_Icecream</span>
+      </div>
+      <div class="actions">
+        <a href="https://github.com" target="_blank" rel="noopener" class="btn btn-primary">
+          GitHub Profile
+        </a>
+        <a href="https://bloxdhub.com" target="_blank" rel="noopener" class="btn btn-secondary">
+          BloxdHub Profile
+        </a>
+      </div>
+    </header>
+
+    <section>
+      <h2>What I'm Into</h2>
+      <div class="tags">
+        <span class="tag">HTML5 & CSS3</span>
+        <span class="tag">Web Design</span>
+        <span class="tag">Gaming</span>
+        <span class="tag">Bloxd.io</span>
+        <span class="tag">Open Source</span>
+      </div>
+    </section>
+
+    <section>
+      <h2>Featured Projects</h2>
+      <div class="grid">
+        <a href="https://github.com/Mint-labs26/Proj1" target="_blank" rel="noopener" class="card">
+          <div>
+            <div class="card-header">
+              <span class="card-title">Proj1</span>
+              <span class="lang-pill">HTML</span>
+            </div>
+            <p>My first public HTML repository on GitHub. Built to test out layouts and web structure.</p>
+          </div>
+          <div class="card-footer">View Repository →</div>
+        </a>
+
+        <div class="card" style="border-style: dashed; opacity: 0.75;">
+          <div>
+            <div class="card-header">
+              <span class="card-title">Next Project</span>
+              <span class="lang-pill">Soon</span>
+            </div>
+            <p>More gaming tools, web experiments, and coding projects currently in the lab.</p>
+          </div>
+          <div class="card-footer">Stay tuned...</div>
+        </div>
+      </div>
+    </section>
+
+    <footer>
+      <p>© 2026 Mint_Labs · Built with pure HTML & CSS</p>
+    </footer>
+  </div>
+</body>
+</html>
